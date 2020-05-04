@@ -1,0 +1,9 @@
+<div style="background-color:green; " class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2 *ngIf="!productSelected"class="text-white">Please select one</h2>
+            <h2 *ngIf="productSelected"class="text-white">{{selectedProduct}} Is Selected</h2><br>
+            <button style="margin-bottom:20px;" class="btn btn-light" (click)="onAddProduct()">Add To Cart</button>
+        </div>
+    </div>
+</div>
